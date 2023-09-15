@@ -1,17 +1,18 @@
-## Pre-assembly QC workflow for ONT.
+## TRACM.
 ### Usage
 
 ```
 
 =======================================================================
-  PRE-ASSEMBLY QC: TAPIR Pipeline version 1.0dev
+  TRACM: TAPIR Pipeline version 1.0dev
 =======================================================================
  The typical command for running the pipeline is as follows:
-        nextflow run main.nf --reads "PathToReadFile(s)" --output_dir "PathToOutputDir"  
+        nextflow run main.nf --reads "PathToReadFile(s)" --output_dir "PathToOutputDir"  --db "PathToDB"
 
         Mandatory arguments:
          --reads                        Query fastq.gz file of sequences you wish to supply as input (e.g., "/MIGE/01_DATA/01_FASTQ/T055-8-*.fastq.gz")
          --output_dir                   Output directory to place output (e.g., "/MIGE/01_DATA/03_ASSEMBLY")
+	 --db				Filepath to reference db
          
         Optional arguments:
          --help                         This usage statement.
@@ -21,15 +22,17 @@
 
 
 ## Introduction
-This pipeline generates pre-assembly QC plots of a Long Read Dataset. To learn more about nanoQC, check out the original author's [github page](https://github.com/wdecoster/nanoQC/tree/master).  
+This pipeline implements tracm for separating strains from mock communities. To learn more about TRACM, check out the original author's [github page](https://github.com/gtonkinhill/tracm/tree/main).  
 
 
 ## Sample command
 An example of a command to run this pipeline is:
 
 ```
-nextflow run main.nf --reads "Sample_files/*.fastq.gz" --output_dir "test2"
+nextflow run main.nf --reads "Sample_files/*.fastq.gz" --output_dir "test2" --db "FilePathToDB"
 ```
+
+Follow the instructions [here](https://gtonkinhill.github.io/tracm/#/database?id=creating-a-database) to discover how to build a custom database acceptable by tracm.
 
 ## Word of Note
 This is an ongoing project at the Microbial Genome Analysis Group, Institute for Infection Prevention and Hospital Epidemiology, Üniversitätsklinikum, Freiburg. The project is funded by BMBF, Germany, and is led by [Dr. Sandra Reuter](https://www.uniklinik-freiburg.de/iuk-en/infection-prevention-and-hospital-epidemiology/research-group-reuter.html).
