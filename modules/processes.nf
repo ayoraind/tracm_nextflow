@@ -19,7 +19,7 @@ process TRACM_ALIGN {
     """
     mkdir ${meta}
     
-    tracm align -i $reads -o ${meta} --prefix ${meta} --keep-all -t 20 --database $db > ${meta}/${meta}.log
+    tracm align -i $reads -o ${meta} --prefix ${meta} --minimap_preset 'map-ont' --keep-all -t 20 --database $db > ${meta}/${meta}.log
 
 
     cat <<-END_VERSIONS > versions.yml
