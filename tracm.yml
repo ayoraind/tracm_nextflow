@@ -1,8 +1,7 @@
-name: nanoqc
+name: tracm
 channels:
   - conda-forge
   - bioconda
   - defaults
 dependencies:
-  - bioconda::nanoqc
-  - multiqc=1.14
+  - tracm
