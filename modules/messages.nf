@@ -2,7 +2,7 @@ def help_message() {
   log.info """
         Usage:
         The typical command for running the pipeline is as follows:
-        nextflow run main.nf --reads "PathToReadFile(s)" --output_dir "PathToOutputDir"  
+        nextflow run main.nf --reads "PathToReadFile(s)" --output_dir "PathToOutputDir"  --db "PathToDB"
 
         Mandatory arguments:
          --reads                        Query fastq.gz file of sequences you wish to supply as input (e.g., "/MIGE/01_DATA/01_FASTQ/T055-8-*.fastq.gz")
