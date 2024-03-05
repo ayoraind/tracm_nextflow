@@ -22,7 +22,7 @@
 
 
 ## Introduction
-This pipeline implements tracm for separating strains from mock communities. To learn more about TRACM, check out the original author's [github page](https://github.com/gtonkinhill/tracm/tree/main). Kindly create and activate the tracm conda environment before running this pipeline. Further details on the installation of tracm can be found [here](https://github.com/gtonkinhill/tracm/tree/main?tab=readme-ov-file#conda).  
+This pipeline implements tracm for separating strains from mock communities. To learn more about TRACM, check out the original author's [Github page](https://github.com/gtonkinhill/tracm/tree/main). Kindly create and activate the tracm conda environment before running this pipeline. Further details on the installation of tracm can be found [here](https://github.com/gtonkinhill/tracm/tree/main?tab=readme-ov-file#conda).  
 
 
 ## Sample command
