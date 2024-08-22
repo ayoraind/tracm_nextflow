@@ -2,6 +2,5 @@ name: tracm
 channels:
   - conda-forge
   - bioconda
-  - defaults
 dependencies:
-  - tracm
+  - tracs
