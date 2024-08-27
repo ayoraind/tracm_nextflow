@@ -1,6 +1,7 @@
 name: tracm
 channels:
-  - conda-forge
   - bioconda
+  - conda-forge
+  - nodefaults
 dependencies:
-  - tracs
+  - bioconda::tracs
