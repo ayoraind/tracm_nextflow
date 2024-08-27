@@ -1,4 +1,4 @@
-## TRACM.
+## TRACM/TRACS.
 ### Usage
 
 ```
@@ -22,7 +22,7 @@
 
 
 ## Introduction
-This pipeline implements tracm for separating strains from mock communities. To learn more about TRACM, check out the original author's [Github page](https://github.com/gtonkinhill/tracm/tree/main). Kindly create and activate the tracm conda environment before running this pipeline. Further details on the installation of tracm can be found [here](https://github.com/gtonkinhill/tracm/tree/main?tab=readme-ov-file#conda).  
+This pipeline implements tracm for separating strains from mock communities. To learn more about TRACM/TRACS, check out the original author's [Github page](https://github.com/gtonkinhill/tracs/tree/main). Kindly create and activate the tracm conda environment before running this pipeline. Further details on the installation of tracm can be found [here](https://github.com/gtonkinhill/tracs/tree/main?tab=readme-ov-file#conda).  
 
 
 ## Sample command
@@ -32,7 +32,7 @@ An example of a command to run this pipeline is:
 nextflow run main.nf --reads "Sample_files/*.fastq.gz" --output_dir "test2" --db "FilePathToDB"
 ```
 
-Follow the instructions [here](https://gtonkinhill.github.io/tracm/#/database?id=creating-a-database) to discover how to build a custom database acceptable by tracm.
+Follow the instructions [here](https://gtonkinhill.github.io/tracs/#/database?id=creating-a-database) to discover how to build a custom database acceptable by tracm/tracs.
 
 ## Word of Note
 This is an ongoing project at the Microbial Genome Analysis Group, Institute for Infection Prevention and Hospital Epidemiology, Üniversitätsklinikum, Freiburg. The project is funded by BMBF, Germany, and is led by [Dr. Sandra Reuter](https://www.uniklinik-freiburg.de/institute-for-infection-prevention-and-control/microbial-genome-analysis.html).
